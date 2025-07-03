@@ -1,0 +1,30 @@
+APFLocalPlannerROS:
+
+  # Attractive gain
+  k_att: 0.1
+
+  # Repulsive gain
+  k_rep: 0.8
+
+  # Obstacle influence distance [m]
+  influence_dist: 1.0
+
+  # Robot “radius” for goal‐reach and obstacle clearance [m]
+  robot_radius: 0.3
+
+  # Maximum forward speed [m/s]
+  max_linear_vel: 0.3
+
+  # Maximum turning speed [rad/s]
+  max_angular_vel: 1.0
+
+  vector_field_rate: 2.0    # how many Hz to update the arrows
+  vector_field_skip: 20      # draw only every 4th cell in each dimension
+
+  arrow_length_mult:  5.0
+  arrow_shaft_diam:   0.2
+  arrow_head_diam:    0.2
+
+  enable_random_perturbation: true    # turn escape on/off
+  perturbation_strength:     1.0   # magnitude of random push
+  perturbation_duration:    10       # cycles to apply it
