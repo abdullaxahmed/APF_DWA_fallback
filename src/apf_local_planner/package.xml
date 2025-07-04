@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>apf_local_planner</name>
+  <version>0.0.1</version>
+  <description>APF-based Local Planner plugin for Move Base (Noetic)</description>
+  <maintainer email="you@yourdomain.com">You</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>pluginlib</depend>
+  <depend>nav_core</depend>
+  <depend>costmap_2d</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>angles</depend>
+  <depend>visualization_msgs</depend>
+  <depend>dwa_local_planner</depend>
+
+
+
+  <export>
+    <nav_core plugin="${prefix}/plugin.xml"/>
+  </export>
+</package>

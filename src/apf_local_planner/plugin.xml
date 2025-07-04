@@ -1,0 +1,7 @@
+<library path="lib/libapf_local_planner">
+  <class name="apf_local_planner/APFLocalPlannerROS"
+         type="apf_local_planner::APFLocalPlannerROS"
+         base_class_type="nav_core::BaseLocalPlanner">
+    <description>Artificial Potential Fields Local Planner</description>
+  </class>
+</library>
